@@ -21,38 +21,37 @@
         </nav>
     </header>
 
-    <section class="contato">
-        <div class="container">
-            <h2 class="titulo-amarelo lado">Contato</h2>
-        </div>
-        <div class="container flex">
-            <form class="flex" action="/registro" method="POST">
-                <label for="usuario">nome</label>
-                <input type="text" name="usuario">
-                <label for="email">email</label>
-                <input type="text" name="email">
-                <label>mensagem</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </form>
-            <div>
-                <div class="paragrafo">
-                    <p>
-                        CONTATO@PETSHOP.COM.BR
-                        <br>
-                        (11) 98484-8484 (WHATSAPP)
-                    </p>
-                    <p>
-                        AVENIDA PAULISTA, 4242
-                        <br>
-                        BAIRRO CONSOLAÇÃO
-                        <br>
-                        SÃO PAULO- SP
-                    </p>
-                </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2759.5926843009993!2d-43.177385889221185!3d-22.940174438857504!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f8be00e9f53%3A0x4ded8caf5caa81d4!2sHortifruti!5e0!3m2!1sen!2sbr!4v1631731279608!5m2!1sen!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+        <h1 class="titulo-amarelo lado">Trabalhe Conosco</h1>
+        <form>
+            <label for="nome-completo">Nome Completo *</label>
+            <input type="text" name="nome-completo" id="nome-completo" required>
+
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone">
+
+            <label for="curriculo">Currículo</label>
+            <input type="file" name="curriculo" id="curriculo">
+
+            <label for="descricao">Mensagem</label>
+            <textarea name="descricao" id="descricao" placeholder="Digite aqui sua mensagem..."></textarea>
+
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input type="date" name="data-nascimento" id="data-nascimento">
+
+            <label for="carga-horaria">Carga Horária</label>
+            <select name="" id="">
+                <option value="Tempo Integral">Tempo Integral</option>
+                <option value="Meio Período">Meio Período</option>
+                <option value="Freelancer">Freelancer</option>
+            </select>
+
+            <button class="button-amarelo" type="submit">enviar</button>
+        </form>
+    </div>
 
     <footer>
         <div class="container">
