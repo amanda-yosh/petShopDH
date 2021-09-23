@@ -82,6 +82,19 @@ button.button-amarelo {
     
     width: 245px;
     height: 32px;
+
+    transition: 0.5s;
+}
+
+button.button-amarelo:hover {
+    background: #a06a0c;
+}
+
+/* link foi clicado */
+button.button-amarelo:active {
+    background: red;
+
+    transition: .2s;
 }
 
 .lado {
@@ -89,7 +102,7 @@ button.button-amarelo {
     margin: 100px 0 35px 0;
 }
 
-/* header */
+/* HEADER */
 header {
     background: var(--amarelo);
 
@@ -108,13 +121,13 @@ header nav ul li {
 }
 
 header nav ul li a {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 800;
     
     text-transform: uppercase;
 }
 
-/* footer */
+/* FOOTER */
 footer {
     background-color: var(--amarelo);
 }
@@ -269,12 +282,11 @@ form {
     margin-bottom: 40px;
 }
 
-
 /* ======================================= */
 /* TRABALHE CONOSCO */
 
 /* formulário */
-form input,
+form input:not([type="checkbox"]),
 form textarea,
 select {
     width: 100%;
@@ -282,4 +294,15 @@ select {
     margin: 5px 0 20px;
 
     resize: none;
+}
+
+/* mudando a borda dos inputs */
+form input:not([type="checkbox"], [type="file"]):focus-visible,
+form textarea:focus-visible,
+form select:focus-visible {
+    outline-color: #a06a0c;
+}
+
+form .check {
+    margin: 10px 0 35px 0;
 }
